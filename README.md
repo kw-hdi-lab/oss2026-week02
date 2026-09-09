@@ -10,7 +10,7 @@ Replace this first line with your name and student ID, commit, push. That is P0.
 - Inline completions off (`Ctrl+Shift+P` → *GitHub Copilot: Disable Completions*).
 - One problem, one file, one commit. Use the commit message given for each problem.
 - Stuck for 15 minutes? Raise a hand.
-- **Push by 10:45.** No push, no attendance.
+- **Push by 11:45.** No push, no attendance.
 
 ## P0. Project setup (8 min) — `chore: init project`
 
