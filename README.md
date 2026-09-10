@@ -42,8 +42,10 @@ For every miss, add one line explaining why. Wrong predictions are the point. Co
 
 ## P3. Scores pipeline (8 min) — `p3: scores pipeline`
 
-20 random integers 0–100 → odd only → doubled → descending → first half. Print after every step.
-`sort()` needs a compare function for numbers: `(a, b) => b - a`.
+Run 20 random scores through a four-step pipeline (odd only → doubled → descending → first half):
+once step by step with a print after every step, and once as a single method chain.
+Then print the original array again and explain why it looks the way it does.
+You will need `filter`, `map`, `sort`, `slice`, `Math.ceil`. Look them up if unsure.
 
 **P0–P3 is today's target line.** P4–P6 are for when you have time.
 
