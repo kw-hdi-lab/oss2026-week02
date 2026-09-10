@@ -20,8 +20,10 @@
 //   node_modules/inko exists
 //   git status does NOT show node_modules
 //
-// The readline part is given. It reads what you type, one line at a time,
-// until you type q. Do not change it. We come back to it in week 3 (async).
+// The readline part is given. Do not change it. We come back to it in week 3 (async).
+//   rl.on("line", f)   runs f every time you press Enter, with the line you typed
+//   rl.on("close", f)  runs f once, after you type q (which calls rl.close())
+// So: collect lines in the "line" handler, do the work in the "close" handler.
 
 import readline from "node:readline";
 
@@ -30,6 +32,7 @@ import readline from "node:readline";
 const reverse = process.argv.includes("--reverse");
 const lines = [];
 
+// stdin = what you type, stdout = the screen. rl reads stdin one line at a time.
 const rl = readline.createInterface({ input: process.stdin, output: process.stdout });
 
 if (reverse) console.log("Type lines in Korean (ko -> en).");
