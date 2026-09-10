@@ -28,6 +28,6 @@ const students = [
 // console.log("per dept:", ...);
 
 // (c) Ranking by score, one line each: "1. Soyeon (CS) 97"
-//     Copy the array before sorting ([...students] or students.slice()).
+//     Copy the array before sorting (students.slice()).
 //     sort() is destructive and (a) and (b) must still see the original order.
 // TODO
